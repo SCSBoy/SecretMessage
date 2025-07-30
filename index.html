@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Message Spécial Pour Toi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="nameForm" class="text-center">
+            <div class="mb-5">
+                <h1>Un Message Spécial</h1>
+                <p class="lead">Pour découvrir ton message spécial, entre ton prénom et ton nom :</p>
+            </div>
+            
+            <form id="nameFormElement" class="form-container">
+                <div class="form-group">
+                    <input type="text" id="firstName" class="form-control form-control-lg" placeholder="Prénom" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastName" class="form-control form-control-lg" placeholder="Nom" required>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="button" id="submitBtn" class="btn btn-primary btn-lg">
+                        <span class="btn-text">Découvrir le message</span>
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="messageContainer" class="text-center d-none">
+            <div class="animation-container">
+                <div class="lottie-animations">
+                    <dotlottie-wc class="lottie-animation active" src="https://lottie.host/c1b89b56-b5f8-48d6-96c3-e44960c70289/TDpWHRa02R.lottie" speed="1" autoplay loop></dotlottie-wc>
+                    <dotlottie-wc class="lottie-animation" src="https://lottie.host/8a31277e-ec27-4bcc-8274-31efeda2128b/YuziBEPJM2.lottie" speed="1" autoplay loop></dotlottie-wc>
+                    <dotlottie-wc class="lottie-animation" src="https://lottie.host/82691e6f-9b58-412d-9162-51bb3b1a0ec0/b089t8JVkW.lottie" speed="1" autoplay loop></dotlottie-wc>
+                </div>
+                <div class="animation-controls">
+                    <button class="animation-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="animation-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="message-content">
+                <div class="message-inner">
+                    <h2 id="greeting" class="mb-4"></h2>
+                    <div id="specialMessage" class="message-text"></div>
+                
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@_gnabila?lang=fr" target="_blank" class="social-link" title="Suis-moi sur TikTok">
+                        <i class="fab fa-tiktok"></i>
+                        <span class="visually-hidden">TikTok</span>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-link" title="Suis-moi sur Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-link" title="Abonne-toi à ma chaîne YouTube">
+                        <i class="fab fa-youtube"></i>
+                        <span class="visually-hidden">YouTube</span>
+                    </a>
+                </div>
+                
+                <div class="admiration mt-5">
+                    <span class="quote-mark">"</span>
+                    <div>Un appel à l'éveil continental</div>
+                    <div class="mt-2">🙏🏾</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
